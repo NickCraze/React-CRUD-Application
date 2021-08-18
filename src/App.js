@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles.css";
+import Create from "./components/create";
+import { BrowserRouter as Router, Route , Link } from "react-router-dom";
+import Read from "./components/read";
+import Update from "./components/update";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="main">
+        <div className="main-style">
+        <h2 className="main-header">React CRUD Operations</h2>
+       <ul className="links">
+         <Link to ='/read'>
+         <li>See Database Users</li> 
+         </Link>
+         <Link to ='/create'>
+         <li>Create User</li>
+         </Link>
+       </ul>
+       </div>
+        <div>
+        
+          <Route exact path="/create" component={Create} />
+        </div>
+        <div style={{ marginTop: 20 }}>
+          <Route exact path="/read" component={Read} />
+        </div>
+
+        <Route path="/update" component={Update} />
+      </div>
+    </Router>
   );
 }
 

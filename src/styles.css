@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #212121;
+  color: whitesmoke;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.main-header {
+  font-family: "Montserrat", sans-serif;
+}
+
+.create-form label {
+  color: rgb(16, 180, 221) !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px !important;
+  font-weight: 900;
+}
+
+.main-style{
+  min-height: 20px;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: centre;
+  align-items: center;
+
+  font-family: "Roboto", sans-serif;
+
+  font-weight: 900;
+
+  
+}
+
+.links {
+  min-height: 20px;
+  width: 40vw;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+
+  font-family: "Roboto", sans-serif;
+
+  font-weight: 900;
+}
+
+.links li {
+  background-color: brown;
+  border:5px solid black;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 20px;
+  width: 16vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  /* margin: 0 10px; */
+}
+
+.links li:hover{
+  cursor: pointer;
+  background-color: white;
+  color:brown
+}
